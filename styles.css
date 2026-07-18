@@ -134,6 +134,32 @@ font-size:.9rem;
     transform:translateY(-2px);
 }
 
+.name-row{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.profile-pic{
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:3px solid #59a8ff;
+
+    box-shadow:
+        0 0 15px rgba(89,168,255,.4),
+        0 0 30px rgba(89,168,255,.15);
+}
+
+.hero h1{
+    margin:0;
+    font-size:5rem;
+    line-height:1;
+}
+
 footer{
 text-align:center;
 padding:40px;
