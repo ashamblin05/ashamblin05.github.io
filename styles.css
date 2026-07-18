@@ -35,13 +35,12 @@ color:var(--accent);
 
 .cta{
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
 
     gap:12px;
 
-    max-width:700px;
 
-    margin:0 auto;
+    margin:30px;
 }
 
 .links a{
