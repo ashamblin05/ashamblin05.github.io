@@ -137,17 +137,16 @@ font-size:.9rem;
 .name-row{
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:50px;
 }
 
 .profile-pic{
-    width:90px;
-    height:90px;
+    width:120px;
+    height:120px;
 
     border-radius:50%;
     object-fit:cover;
 
-    border:3px solid #59a8ff;
 
     box-shadow:
         0 0 15px rgba(89,168,255,.4),
