@@ -59,6 +59,7 @@ section{
 }
 
 .eyebrow{
+text-align:center;
 color:var(--accent);
 text-transform:uppercase;
 letter-spacing:1px;
