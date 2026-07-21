@@ -124,6 +124,29 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
+.skills-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+
+    max-width:900px;
+    margin:0 auto;
+}
+
+.tag{
+    display:inline-block;
+    padding:8px 14px;
+
+    background:#1b2430;
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+    font-size:.95rem;
+    font-weight:500;
+}
+
 .tags span{
 display:inline-block;
 padding:6px 12px;
@@ -239,12 +262,21 @@ h1{font-size:2.6rem}
         flex-direction:column;
         align-items:center;
     }
+    
+   .project-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
 
-    .project-links{
-        flex-direction:column;
+.skills-grid{
+        gap:8px;
     }
 
-    
+    .tag{
+        font-size:.85rem;
+        padding:6px 12px;
+    }
+
     .profile-pic{
         width:120px;
         height:120px;
