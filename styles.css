@@ -245,24 +245,18 @@ color:var(--muted);
 .contact-btn{
 
     display:flex;
-
     align-items:center;
+    justify-content:space-between;
 
     gap:20px;
 
     padding:15px 25px;
 
-    text-decoration:none;
-
-    color:var(--text);
-
     background:#1b2430;
-
     border:1px solid var(--border);
 
     border-radius:12px;
 
-    transition:.2s;
 }
 
 .contact-btn:hover{
