@@ -230,6 +230,65 @@ padding:40px;
 color:var(--muted);
 }
 
+.contact-links{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+    max-width:350px;
+
+    margin:0 auto;
+}
+
+.contact-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:15px 25px;
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    background:#1b2430;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    transition:.2s;
+}
+
+.contact-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.contact-btn img{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+.contact-btn span{
+
+    color:var(--accent);
+
+    font-weight:600;
+
+    font-size:1rem;
+
+}
+
 @media(max-width:700px){
 h1{font-size:2.6rem}
 .links{display:none}
