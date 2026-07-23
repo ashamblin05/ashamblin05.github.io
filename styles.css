@@ -32,19 +32,25 @@ border-bottom:1px solid var(--border);
     display:flex;
     flex-direction:column;
     gap:20px;
+    max-width:900px;
+    margin:0 auto;
 }
 
 .contact-item{
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns:
+        60px
+        1fr
+        auto;
     align-items:center;
+    gap:25px;
     width:100%;
     padding:25px;
-    text-decoration:none;
-    color:var(--text);
     background:var(--card);
     border:1px solid var(--border);
     border-radius:16px;
+    text-decoration:none;
+    color:var(--text);
     transition:.2s;
 }
 
@@ -71,16 +77,46 @@ border-bottom:1px solid var(--border);
 
 .contact-right{
     margin:0;
+    justify-self:end;
     color:var(--accent);
     font-weight:600;
 }
 
 .contact-right a{
     text-decoration:none;
-    color:var(--accent);
+    color:var(--muted);
 }
 
 .contact-right a:hover{
+    text-decoration:underline;
+}
+
+.email-card{
+    grid-template-columns:
+        60px
+        1fr;
+}
+
+.email-text{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.email-text h3{
+    margin:0;
+}
+
+.email-text p{
+    margin:0;
+}
+
+.email-text a{
+    color:var(--muted);
+    text-decoration:none;
+}
+
+.email-text a:hover{
     text-decoration:underline;
 }
 
@@ -286,76 +322,9 @@ padding:40px;
 color:var(--muted);
 }
 
-.contact-links{
-
-    display:flex;
-    flex-direction:column;
-
-    gap:20px;
-
-    max-width:350px;
-
-    margin:0 auto;
-}
-
-.contact-btn{
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    gap:20px;
-
-    padding:15px 25px;
-
-    background:#1b2430;
-    border:1px solid var(--border);
-
-    border-radius:12px;
-
-}
-
-.contact-btn:hover{
-
-    transform:translateY(-3px);
-
-}
-
-.contact-btn img{
-
-    width:40px;
-
-    height:40px;
-
-}
-
-.contact-btn span{
-
-    color:var(--accent);
-
-    font-weight:600;
-
-    font-size:1rem;
-
-}
-
 .contact-item img{
-
     width:40px;
     height:40px;
-
-}
-
-.contact-text h3{
-
-    margin:0;
-}
-
-.contact-text p{
-
-    margin:5px 0 0 0;
-    color:var(--accent);
-    font-weight:600;
 }
 
 @media(max-width:700px){
@@ -366,17 +335,11 @@ h1{font-size:2.6rem}
 
 @media(max-width:768px){
    
-    .contact-btn{
-        flex-direction:column;
-        text-align:center;
-        gap:10px;
-    }
-
 .contact-item{
+    display:flex;
     flex-direction:column;
     text-align:center;
-    gap:20px;
-
+    gap:15px;
 }
     
 .contact-left{
@@ -387,6 +350,22 @@ h1{font-size:2.6rem}
 .contact-left img{
     width:50px;
     height:50px;
+}
+
+.contact-right{
+    justify-self:center;
+    text-align:center;
+}
+
+
+.email-card{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.email-text{
+    align-items:center;
 }
     
     nav{
